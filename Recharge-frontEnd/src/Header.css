@@ -1,0 +1,128 @@
+/* Base layout */
+/* Base layout */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e3f2fd; /* Light blue */
+  color: #003366;
+  padding: 10px 20px;
+  border-bottom: 3px solid #cc0000;
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#header {
+  height: 100px;
+  background-color: white; /* Light blue */
+}
+
+.header-left .logo {
+  height: 40px;
+}
+
+/* Right section layout */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Icon buttons */
+.icon-btn {
+  background: none;
+  border: none;
+  color: #003366;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon-btn:hover {
+  color: #cc0000;
+}
+
+/* Notifications dropdown */
+.header-right > div {
+  position: relative;
+}
+
+.header-right h3 {
+  margin: 0;
+  padding: 10px;
+  background-color: #003366;
+  color: white;
+  font-size: 1rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.header-right > div > div {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #cc0000;
+  border-radius: 5px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+.header-right > div > div > div > div {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.header-right > div > div > div > div:last-child {
+  border-bottom: none;
+}
+
+.header-right span {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* User dropdown */
+.header-right .user-dropdown {
+  padding: 10px;
+}
+
+.user-dropdown h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.user-dropdown p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.user-dropdown button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #003366;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.user-dropdown button:hover {
+  background-color: #f0f8ff; /* Light blue hover */
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 8px 0;
+}

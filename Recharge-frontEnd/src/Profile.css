@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fb;
+  color: #333;
+}
+
+.profile-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.profile-card {
+  border: none;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease-in-out;
+}
+
+.profile-card:hover {
+  transform: translateY(-3px);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-label {
+  font-size: 0.9rem;
+}
+
+input.form-control {
+  background: #f9fafc;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  padding: 8px 12px;
+}
+
+input.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.15rem rgba(0,123,255,0.2);
+}
+
+.btn {
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.btn-outline-primary:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.btn-outline-dark:hover {
+  background: #333;
+  color: #fff;
+}
+
+.btn-danger {
+  background: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background: #bb2d3b;
+}

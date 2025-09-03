@@ -1,0 +1,110 @@
+/* src/styles/login.css */
+
+.login-form {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 3rem;
+  background-color: rgba(255, 255, 255, 0.1); /* Corrected RGB values */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 10px 52px 0 rgb(27, 102, 242);
+  backdrop-filter: blur(10px);
+  color: #f10b0b;
+  text-align: center;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+  border: 1px solid #050505aa;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #114edd;
+}
+
+.login-form input::placeholder {
+  color: #0c0b0bda;
+  font-size: 16px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 16px;
+  background-color: #f30606eb;
+  color: white;
+  border: none;
+  border-radius: 10px; /* Fixed 'px' typo */
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #fb3306f0;
+}
+
+.error {
+  color: #fa0b0bb2;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 16px;
+}
+.login-page {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.login-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.remember-me input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.remember-me label {
+  cursor: pointer;
+}
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.login-form {
+  background: linear-gradient(135deg, #ffffff1a, #114edd1a, #f30606eb);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+  /* existing styles below */
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 10px 52px 0 rgb(27, 102, 242);
+  backdrop-filter: blur(10px);
+  color: #f10b0b;
+  text-align: center;
+}

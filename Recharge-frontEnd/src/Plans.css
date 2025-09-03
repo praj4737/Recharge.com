@@ -1,0 +1,134 @@
+/* --------- Base --------- */
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: #F9FAFB; /* Light neutral background */
+  color: #1F2937;
+  line-height: 1.6;
+}
+
+/* --------- Container --------- */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* --------- Headings --------- */
+h3 {
+  font-weight: 700;
+  color: #FF6B35; /* Orange title */
+  margin-bottom: 1.5rem;
+}
+
+/* --------- Tabs Navigation --------- */
+.nav-tabs {
+  border: none;
+  justify-content: center;
+  margin-bottom: 24px;
+  gap: 8px;
+}
+
+.nav-tabs .nav-link {
+  color: #1F2937;
+  background: #ffffff;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 10px 18px;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+  background: #FF6B35;
+  color: #fff;
+  border-color: #FF6B35;
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: rgba(255, 107, 53, 0.08);
+  border-color: #FF6B35;
+  color: #FF6B35;
+}
+
+/* --------- Cards --------- */
+.card {
+  border-radius: 12px;
+  border: 1px solid #E5E7EB;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  border-color: #FF6B35;
+  box-shadow: 0 6px 16px rgba(255, 107, 53, 0.15);
+}
+
+/* Card Header */
+.card-header {
+  background-color: #FF6B35;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 20px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Card Body */
+.card-body {
+  padding: 20px;
+}
+
+.card-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-body li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #4B5563;
+}
+
+.card-body li strong {
+  color: #1F2937;
+}
+
+/* --------- Buy Now Button --------- */
+.btn-danger {
+  background-color: #FF6B35;
+  border: none;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #e65a2c; /* Darker orange */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 107, 53, 0.25);
+}
+
+/* --------- Responsive --------- */
+@media (max-width: 768px) {
+  .nav-tabs {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .nav-tabs .nav-link {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+
+  .card-body {
+    padding: 16px;
+  }
+}

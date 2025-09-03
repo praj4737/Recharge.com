@@ -1,0 +1,119 @@
+/* -------- Base -------- */
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: #F9FAFB;
+  color: #1F2937;
+  line-height: 1.6;
+}
+
+/* -------- Container -------- */
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* -------- Card -------- */
+.card {
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  padding: 2rem;
+}
+
+/* -------- Heading -------- */
+h2 {
+  font-weight: 700;
+  color: #FF6B35;
+  margin-bottom: 1.5rem;
+}
+
+/* -------- Form Labels -------- */
+.form-label {
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+/* -------- Form Inputs -------- */
+.form-control,
+.form-select {
+  border-radius: 10px;
+  border: 1px solid #D1D5DB;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #FF6B35;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.25);
+}
+
+/* -------- Spinner -------- */
+.spinner-border {
+  color: #FF6B35;
+  width: 2rem;
+  height: 2rem;
+  border-width: 3px;
+}
+
+/* -------- Buttons -------- */
+.btn-success {
+  background-color: #FF6B35;
+  border: none;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #e65a2c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 107, 53, 0.25);
+}
+
+.btn-outline-secondary {
+  border-radius: 30px;
+  padding: 10px 22px;
+  font-weight: 500;
+  color: #4B5563;
+  border: 1px solid #D1D5DB;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+  background: #F3F4F6;
+  color: #1F2937;
+}
+
+/* -------- Payment Icons -------- */
+hr {
+  border-top: 1px solid #E5E7EB;
+}
+
+img {
+  max-height: 45px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 576px) {
+  .card {
+    padding: 1.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+#spinner-div{
+    visibility: hidden;
+}

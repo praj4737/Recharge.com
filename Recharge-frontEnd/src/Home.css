@@ -1,0 +1,199 @@
+/* Base Styles */
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: #f5f7fa;
+  color: #1c1c1c;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Main Container */
+.home-container {
+  width: 100%;
+  padding: 30px;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 40px;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0px 4px 16px rgba(0,0,0,0.06);
+}
+
+/* Section Headers */
+section h2 {
+  color: #0d47a1;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  display: flex;
+  justify-content: space-between; /* Button to the right */
+  align-items: center;
+}
+
+/* Buttons (Modern CTA) */
+.retro-btn {
+  background: #fb8c00;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.retro-btn:hover {
+  background: #ef6c00;
+  box-shadow: 0px 4px 12px rgba(251, 140, 0, 0.4);
+}
+
+/* Info Card */
+.info-card {
+  border: 1px solid #e0e0e0;
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 18px;
+  margin-top: 15px;
+}
+
+/* Plans Grid */
+.plans-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.plan-card {
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.plan-card h3 {
+  color: #0d47a1;
+  margin-bottom: 8px;
+}
+
+.plan-card:hover {
+  background: #ffffff;
+  box-shadow: 0px 4px 14px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.service-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background: #f9f9f9;
+  padding: 14px;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Settings */
+.settings-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 18px;
+  background: #fafafa;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.settings-card:hover {
+  background: #ffffff;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.08);
+}
+
+/* Loading Text */
+.loading-text {
+  font-size: 18px;
+  color: #666;
+  font-style: italic;
+  text-align: center;
+}
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #333;
+}
+/* Carousel Images */
+.carousel-inner img {
+  width: 100%;
+  max-height: 500px;       /* Big & visible */
+  object-fit: fill;   /* Crop nicely instead of stretching */
+  border-radius: 12px; /* Optional: Rounded corners for modern look */
+}
+/* Info Card */
+.info-card {
+  border: 1px solid #e0e0e0;
+  background: #e3f2fd; /* Light blue */
+  border-radius: 10px;
+  padding: 18px;
+  margin-top: 15px;
+}
+
+/* Plan Card */
+.plan-card {
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background: #e3f2fd; /* Light blue */
+  padding: 20px;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Service Card */
+.service-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background: #e3f2fd; /* Light blue */
+  padding: 14px;
+  text-align: center;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Settings Card */
+.settings-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 18px;
+  background: #e3f2fd; /* Light blue */
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
