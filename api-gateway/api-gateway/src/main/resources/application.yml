@@ -1,0 +1,55 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      routes:
+        - id: REGISTRATION
+          uri: lb://register
+          predicates:
+            - Path=/register
+        - id: LOGIN-SERVICE
+          uri: lb://login-service
+          predicates:
+            - Path=/login
+        - id: PAYMENTS
+          uri: lb://payments
+          predicates:
+            - Path=/payments
+        - id: RECHARGE-SERVICE
+          uri: lb://recharge-service
+          predicates:
+            - Path=/rechargePlans
+        - id: RECHARGE-SERVICE
+          uri: lb://recharge-service
+          predicates:
+            - Path=/getUpdatedUser/**
+
+      globalcors:
+        add-to-simple-url-handler-mapping: true
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - http://localhost:3000/
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders:
+              - Authorization
+              - Content-Type
+              - Accept
+            allowCredentials: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
